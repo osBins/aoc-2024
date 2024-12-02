@@ -9,7 +9,7 @@ import java.util.List;
 public class Part2 {
     public static void main(String[] args) throws IOException {
         List<String> lines;
-        lines = Files.readAllLines(Paths.get("src/resources/day1.txt"));
+        lines = Files.readAllLines(Paths.get("src/resources/input/day1.txt"));
         int totalDistance = 0;
 
         List<String> list1 = new ArrayList<>();
