@@ -36,7 +36,7 @@ public class Part2 {
 
     public static void main(String[] args) throws IOException {
         List<String> lines;
-        lines = Files.readAllLines(Paths.get("src/resources/test/day2.txt"));
+        lines = Files.readAllLines(Paths.get("src/resources/input/day2.txt"));
         List<List<Integer>> fullReport = new ArrayList<>();
 
         for (String line : lines) {
@@ -52,7 +52,7 @@ public class Part2 {
         for (List<Integer> report : fullReport) {
             boolean isSafe = isSafe(report);
             if (!isSafe) {
-                for (int i = 0; i < report.size() - 1; i++) {
+                for (int i = 0; i < report.size(); i++) {
                     int removed = report.remove(i);
                     if (isSafe(report)) {
                         break;
